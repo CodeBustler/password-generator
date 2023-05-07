@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Random Password Generator | 18/100 Projects | By CodeBustler</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate Strong Password</h1>
+      <input
+        type="text"
+        placeholder="Click the button to generate a password "
+        id="display-password"
+      />
+      <div class="generate">
+        <select name="passwordLength" id="password-length">
+          <option value="0" selected disabled>Select Length</option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="12">12</option>
+          <option value="18">18</option>
+          <option value="30">30</option>
+        </select>
+        <button onclick="randomPassword()">Generate Password</button>
+      </div>
+      <p id="error-info"></p>
+    </div>
+    <footer>
+      <a href="https://www.instagram.com/codebustler">By CodeBustler</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
