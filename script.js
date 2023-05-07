@@ -10,11 +10,11 @@ function randomPassword() {
   if (passwordLength == 0) {
     error.innerHTML = 'Please select password length';
     displayPassword.value = 'Please select password length';
-    error.style.display = 'block';
     error.style.padding = '10px 15px';
   }
   setTimeout(() => {
-    error.style.display = 'none';
+    error.style.visibility = 'hidden';
+    window.location.reload();
   }, 2000);
 
   for (let i = 0; i < passwordLength; i++) {

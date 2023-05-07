@@ -15,6 +15,7 @@ body {
   background-image: url('https://cdn.pixabay.com/photo/2020/04/25/12/14/circle-5090539_960_720.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .container {
@@ -40,21 +41,18 @@ body {
 
 .generate {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .generate * {
+  width: 48%;
   padding: 5px;
   font-size: 16px;
 }
 
-footer {
-  margin-top: 100px;
-  text-align: center;
-}
-
-footer a {
+a {
   text-decoration: none;
   color: white;
+  position: absolute;
+  bottom: 100px;
 }
