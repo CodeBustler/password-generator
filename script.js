@@ -11,11 +11,11 @@ function randomPassword() {
     error.innerHTML = 'Please select password length';
     displayPassword.value = 'Please select password length';
     error.style.padding = '10px 15px';
+    setTimeout(() => {
+      error.style.visibility = 'hidden';
+      window.location.reload();
+    }, 2000);
   }
-  setTimeout(() => {
-    error.style.visibility = 'hidden';
-    window.location.reload();
-  }, 2000);
 
   for (let i = 0; i < passwordLength; i++) {
     password += characters[Math.floor(Math.random() * characters.length)];
